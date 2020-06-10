@@ -1,0 +1,21 @@
+sql server create link server
+
+Security
+Permissions
+When using Transact-SQL statements, requires ALTER ANY LINKED SERVER permission on the server 
+or membership in the setupadmin fixed server role. 
+When using Management Studio requires CONTROL SERVER permission 
+or membership in the sysadmin fixed server role.
+
+
+USE [master]  
+GO  
+EXEC master.dbo.sp_addlinkedserver   
+    @server = N'SRVR002\ACCTG',   
+    @srvproduct=N'SQL Server' ;  
+GO  
+
+reference:
+https://docs.microsoft.com/en-us/sql/relational-databases/linked-servers/create-linked-servers-sql-server-database-engine?view=sql-server-ver15
+https://www.mssqltips.com/sqlservertip/6083/understanding-sql-server-linked-servers/
+
