@@ -1,0 +1,4 @@
+
+netstat 脚本
+reference:
+https://www.databasejournal.com/features/oracle/finding-database-network-abusers-with-netstat.html
